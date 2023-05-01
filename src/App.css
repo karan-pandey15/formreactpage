@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+    background-color: rgb(105, 136, 169);
+}
+.bgcolor{
+    /* background-color: hwb(59 9% 7%); */
+    background-color: #ffcc00 ;
+    height: 80vh;
+    width: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    border-radius: 4px;
+}
+img{
+    clip-path: polygon(0 0, 100% 0, 90% 99%, 0% 100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.innerContainer{
+    /* overflow: hidden; */
+    /* 
+    */
+    /* float: right;
+     */
+}
+.innerContainer img{
+    /* object-fit: cover; */
+    width: 280px;
+    height: 520px;
+    /* float: ; */
+
+}
+.formContainer{
+    position: absolute;
+    top: 45%;
+    left: 72%;
+    border-radius: 4px;
+    transform: translate(-50%,-50%);
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.formstyle{
+    height: 260px;
+    width: 250px;
+    background-color: white;
+    /* position: absolute;
+    top: 45%;
+    left: 72%;
+    border-radius: 4px;
+    transform: translate(-50%,-50%); */
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    box-shadow: 0px 3px 3px rgba(210, 191, 191, 0.789);
+}
+.txt1{
+    color: rgba(254, 254, 50, 0.778);
+    font-weight: bolder;
+    font-size: 12px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.txt2{
+    color: rgb(214, 207, 207);   
+    font-size: 12px;
 }
 
-.App-link {
-  color: #61dafb;
+.inputContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+.inputone{
+    padding: 10px;
+    border: 0.2px solid gray;
+    border-radius: 5px;
+    background-color: hsla(0, 0%, 100%, 0.927);
+    width: 35vh;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inputtwo{
+    padding: 10px;
+    border: 0.2px solid gray;
+    border-radius: 5px;
+    background-color: hsla(0, 0%, 100%, 0.927);
+    width: 35vh;
+}
+.btn{
+    padding: 12px;
+    width: 35vh;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-weight: bolder;
+    color: white;
+    background-color: rgb(23, 100, 151);
+    border: none;
+    cursor: pointer;
+}
+.formli{
+    color: white;
+    list-style: none;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 400;
+}
+.formli2{
+    color: black;
+    list-style: none;
+    text-align: center;
+    font-weight: 400;
+}
+
+ span .formspan{
+   text-align: center;
+}
+.formdiv{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
